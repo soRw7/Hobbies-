@@ -1,0 +1,90 @@
+
+<html>
+  <head>
+    <title> Soham- Hobbies</title>
+    <link rel="icon"
+      type="image/x-icon"
+      href="image/logo.ico">
+
+    <link rel="stylesheet" type="text/css"  href="styles.css">
+  </head>
+
+
+
+
+  <h2>
+<center>
+Hobbies
+</center>
+</h2>
+<hr>
+
+  <body>
+    Hello Everybody, I am Soham of Tagore International School. In this page , I will show you my hobbies. Click the buttons below
+    to know my hobby in image form. If you want to know more , go below and read as per the different hobbies.
+    <hr>
+     <center>
+    <img src="image/22.jpg" id="image">
+    </center>
+    <center>
+      <br>
+    <button onclick="document.getElementById('image').src='image/code.jpg'">
+My First Hobby</button>
+
+
+<button onclick="document.getElementById('image').src='image/2.jpg'">
+My Second Hobby</button>
+
+
+<button onclick="document.getElementById('image').src='image/playstation.jpg'">
+My third Hobby</button>
+
+<br>
+<hr>
+<!-- Here my image changing is done, now I will proceed to content -->
+
+<button class="accordion">Coding</button>
+<div class="panel">
+  <p>My first hobby is coding, I like coding, this website is also designed by me.
+    I know html, css, java and c#( both javascript and c# , I am  currently learning).</p>
+</div>
+<br>
+<button class="accordion">Football</button>
+<div class="panel">
+  <p>My second hobby is Football. I like playing football. I have also been a part of school football and won tournaments with my team.
+  During this lockdown , I cannot play football but I still remember all the skills, I keep practicing in my backyard.</p>
+</div>
+<br>
+<button class="accordion">Gaming </button>
+<div class="panel">
+  <p> My third hobby is Gaming, don't think I only like playing games, I also like making games in Unity(currently learning begginer)
+  . I also like 3d modelling(intermediate) which I can use in my Unity games. I like playing games of both mobile and PC.</p>
+</div>
+<br>
+<!-- this is accordion html part, now I will proceed to Java part -->
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+<hr>
+<br>
+<br>
+<footer>
+<center><font size ='5'face= 'Trebuchet MS' color='black'>
+  <b>Thank You</b><br>
+Copyrights reserved&copy; 2020 Soham- Hobbies by Soham Panda of 7 C</font></center></footer>
+  </body>
+</html>
